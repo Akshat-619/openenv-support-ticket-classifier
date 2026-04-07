@@ -16,12 +16,12 @@ def home():
     }), 200
 
 
-@app.route("/reset", methods=["GET"])
+@app.route("/reset", methods=["GET", "POST"])
 def reset_env():
     return jsonify(env.reset()), 200
 
 
-@app.route("/state", methods=["GET"])
+@app.route("/state", methods=["GET", "POST"])
 def get_state():
     return jsonify(env.state()), 200
 
