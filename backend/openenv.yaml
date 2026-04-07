@@ -1,0 +1,15 @@
+name: support-ticket-classifier
+description: A simple OpenEnv environment for classifying support tickets into billing, shipping, or technical categories.
+version: "1.0.0"
+
+endpoints:
+  home: /
+  reset: /reset
+  state: /state
+  step: /step
+
+methods:
+  home: GET
+  reset: GET
+  state: GET
+  step: POST
